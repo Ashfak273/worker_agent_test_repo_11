@@ -17,6 +17,7 @@ async def create_github_repo_service(auth_data: dict, repo_name: str, connection
     access_token = auth_data.get("access_token")
     headers = {"Authorization": f"token {access_token}", "Accept": "application/json"}
     payload = {
+        sdd
         "name": repo_name,
         "private": private,
         "description": description,
